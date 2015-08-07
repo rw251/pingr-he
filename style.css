@@ -1,0 +1,558 @@
+/* Put your css in here */
+body {
+  padding-top: 50px;
+}
+
+body.qof {
+  background-color: #ddf9f9;
+}
+
+/* thanks fly in message */
+.flyover {
+   left: 150%;
+   overflow: hidden;
+   position: fixed;
+   width: 50%;
+   opacity: 0.9;
+   z-index: 1050;
+   /*transition: left 0.6s ease-out 0s;*/
+}
+
+.flyover-centered {
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.flyover.in {
+   left: 50%;
+}
+
+.hide-if-logged-out {
+  display: none;
+}
+
+.scroll-bar {
+  overflow-y: scroll;
+}
+
+.fa-caret-invisible {
+  opacity: 0;
+}
+
+.panel-grey {
+  background-color: #f3f3f3;
+}
+
+.panel-red {
+  background-color: #f3cccc;
+}
+
+.panel-green {
+  background-color: #ccf3cc;
+}
+
+/* Better widths for container */
+@media (min-width: 768px) {
+  .container {
+    width: 538px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 762px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1500px) {
+  .container {
+    width: 1270px;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    width: 1570px;
+  }
+}
+
+/*
+To stop screen shifting left slightly on modal popup
+see https://github.com/twbs/bootstrap/issues/9855
+mod
+*/
+
+.modal-open {
+  padding-right: 0 !important;
+}
+
+/* position the dialog a bit lower down the screen */
+
+.modal-dialog {
+  margin-top: 300px;
+}
+
+/* Change header*/
+/*.modal-content {
+  background-color: #0480be;
+}*/
+.modal-header {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #aaa;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+.modal-title {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+
+nav.full{
+	left:230px;
+}
+
+nav.part{
+	left: 75px;
+}
+
+header {
+	background-color: #f2f2f4;
+	border-bottom: 1px solid #ececee;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.fa-stack-mod {
+	line-height: 60px;
+}
+
+.icon-background {
+	color: white;
+}
+
+.fa-stack-2-2x {
+	font-size: 2.2em;
+}
+
+
+.icon-background-border-success {
+	color: #70ba63;
+}
+
+.icon-background-border-info {
+	color: #4cbceb;
+}
+
+.icon-background-border-warning {
+	color: #feb252;
+}
+
+.icon-background-border-danger {
+	color: #e35b5a;
+}
+
+.icon-background-border {
+	color: #85868d;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.unclickable {
+  cursor: default;
+}
+/*
+#chart-benchmark .c3-line {
+	stroke-width: 0px;
+}
+
+.todo-list .list-item {
+	display: block;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}*/
+
+.tr-hovered {
+	background-color: rgb(244,244,255);
+}
+
+.btn-toggle {
+	opacity:0.5;
+}
+
+.btn-toggle.active {
+	opacity:1;
+}
+
+#breakdown-table tbody tr:hover {
+	background-color: rgb(244,244,255);
+	cursor: pointer;
+}
+
+#breakdown-table tbody tr.selected {
+	background-color: rgb(244,255,244);
+}
+
+.patient-list .highlighted {
+	background: rgb(242,242,244);
+}
+
+.patient-list tr:hover {
+	cursor: pointer;
+	background-color: rgb(242,242,244);
+}
+
+.icon-success {
+	color:rgb(44, 160, 44);
+}
+.icon-info {
+	color:rgb(31, 119, 180);
+}
+.icon-warning{
+	color:rgb(255, 127, 14);
+}
+.icon-danger{
+	color:rgb(214, 39, 40);
+}
+
+.shorty{
+	margin-left: 75px;
+}
+
+.navbar-nav>li>.btn-group {
+	padding: 10px 15px 10px 15px;
+}
+
+.navbar-toggle {
+	display: block;
+}
+
+.navbar .collapsed {
+	display: none;
+}
+
+.navbar .container {
+	width: auto;
+	background-color: rgb(242,242,244);
+}
+
+.starter-template {
+  padding: 20px 15px 0px 15px;
+}
+
+.starter-template-high {
+  padding: 15px 15px 0px 15px;
+}
+
+.suggestion.danger td span {
+	text-decoration: line-through;
+}
+
+.thumb-up {
+    color:  rgb(68, 157, 68);
+}
+
+.thumb-down {
+    color:  rgb(201, 48, 44);
+}
+
+.navbar-nav {
+  width: 85%;
+}
+
+.btn-padding {
+   position: relative;
+   overflow: hidden;
+   margin: 6px;
+}
+
+tr.active > td {
+  color:#222;
+}
+/*
+ * Better file loading buttons#
+ *  courtesy of Cory LaViska http://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3/
+ */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    margin: 6px;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+/*
+.form-horizontal .control-label {
+  padding-top: 4px;
+}
+.input-group-addon {
+  padding: 0px 6px;
+}
+.form-group .form-control, .form-group .input-group {
+  margin-bottom: 5px;
+}
+.input-group .form-control {
+  margin:0;
+}*/
+/* ------------------ Login page --------------------*/
+.login-page > .login-container {
+  width: 360px;
+}/*
+.narrow-container{
+  width: 360px;
+}*/
+.login-page .login-panel {
+  margin-top: 40px;
+}
+
+.c3-chart-arc path._unselected_ {
+	opacity: 0.3 !important;
+}
+.c3-chart-arc path._selected_ {
+	opacity: 1 !important;
+}
+
+.c3-chart-arc text {
+	fill: #000;
+}
+/*
+.dashboard-stats .view-style {
+	opacity: 1;
+	font-style: italic;
+	font-size: 20px;
+	padding: 7px 0px 15px 0px;
+	color: rgb(95, 175,245);
+}*/
+/*
+.fa-check-circle:before {
+  content: "\f058";
+}*/
+
+table, th, td {
+    border-collapse: collapse;
+}
+th,td {
+    padding: 30px;
+}
+
+/*.soon {
+	font-size: 64px;
+	text-align: center;
+}*/
+
+
+/*************************************
+*	Pathway code
+**************************************/
+
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#cd-timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+#cd-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  height: 70%;
+  margin-left: -2px;
+  width: 4px;
+  background: #85868d;
+}
+
+.cd-timeline-block {
+  position: relative;
+  margin: 1.5em 0;
+  min-height:90px;
+}
+.cd-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-block:first-child {
+  margin-top: 0;
+}
+.cd-timeline-block:last-child {
+  margin-bottom: 0;
+}
+
+
+/**********************************/
+/* Typeahead for patient searching
+************************************/
+
+.tt-dropdown-menu,
+.gist {
+  text-align: left;
+}
+
+.typeahead,
+.tt-query,
+.tt-hint {
+  width: 396px;
+  height: 30px;
+  padding: 0px 12px;
+  font-size: 13px;
+  line-height: 30px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  outline: none;
+}
+
+.typeahead {
+  background-color: #fff;
+}
+
+.typeahead:focus {
+  border: 2px solid #0097cf;
+}
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-dropdown-menu {
+  width: 422px;
+  margin-top: 12px;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+  padding: 3px 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.tt-suggestion.tt-cursor {
+  color: #fff;
+  background-color: #0097cf;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+.gist {
+  font-size: 14px;
+}
+
+.twitter-typeahead, .tt-hint, .tt-input, .tt-dropdown-menu {
+  width: 150px;
+}
+
+.twitter-typeahead {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+
+.twitter-typeahead:before{
+	content:"\f002";
+	position:absolute;
+	left:12px;
+	font-family: FontAwesome;
+	cursor:pointer;
+	top:7px;
+	color:#c4c4cd;
+	display:inline-block;
+}
+
+/* Fix for c3 flicker whereby
+   extra svg elements at the bottom
+   of the page cause the vertical
+   scrollbar to toggle  */
+body > svg {
+	/*height:0px !important;*/
+	position: absolute;
+    z-index: -10;
+    top: 0;
+}
+
+/* Style the tooltips for the care pathway*/
+/*.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top-color: #fff;
+  border-width: 5px 5px 0;
+}
+.tooltip-inner {
+  color: #000;
+  background: #fff;
+  border: solid 1px #fff;
+}*/
+
+/* Define a class for a padding less row*/
+.row-no-padding>div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Allow column to stretch to height of container*/
+.full-height-col-container {
+	overflow: hidden;
+	position: relative;
+}
+
+.full-height-col-container .full-height-col{
+	position: absolute;
+	height: 100%;
+	right: 0;
+}
